@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sanse&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+body 
+{
+    min-height: 100vh;
+    background: linear-gradient(rgb(28, 128, 13), rgb(74, 204, 26));
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo
+{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
