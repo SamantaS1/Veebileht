@@ -1,50 +1,83 @@
-@import url('https://fonts.googleapis.com/css?family=Public+Sanse&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-*
-{
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
     margin: 0;
     padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 350%;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px #666;
+}
+
+.slide {
+    position: relative;
+    /* 25% paremalt vasakule ja 10% ylevalt alla */
+    padding: 25% 10%; 
+    min-height: 100%;
+    width: 100%;
     box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
+    /* box-shadow: 0 -1px 10px pink; */
+    transform-style: inherit;
 }
 
-body 
-{
-    min-height: 100vh;
-    background: linear-gradient(rgb(28, 128, 13), rgb(74, 204, 26));
-}
-
-header {
+.slide:before {
+    /* piltide jaoks */
+    content: "";
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    right: 0;
+    /* box-shadow: 0 0 8px 1px pink; */
 
-}
-header .logo
-{
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 3em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-header ul
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
-header ul li
-{
-    list-style: none;
-    margin-left: 20px;
+.slide, .slide:before {
+    background: 50% 50% / cover;
+
+}
+
+#intro:before {
+    background-image: url(oof2.jpg);
+    /* annab parallex efekti */
+    transform: translateZ(-1px) scale(2)
+    
+}
+
+#slide1:before {
+    background-image: url(pink.png);
+    /* et see oleks peal*/
+    z-index: 2;
+    
+}
+
+#slide1 video {
+    z-index: 3;
+    position: absolute;
+    top: 1cm;
+    left: 1cm;
+    right: 1cm;
+    bottom: 1cm;
+    width: 90%;
+    height: 90%;
+}
+
+#slide2 {
+    background-image: url(white.jpg);
+    
+
 }
