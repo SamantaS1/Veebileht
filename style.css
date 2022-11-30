@@ -1,0 +1,78 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 600%;
+    text-align: center;
+    color: rgb(132, 66, 126);
+    text-shadow: 3px 3px rgb(255, 255, 255);
+}
+
+p {
+    text-align: center;
+}
+/* siit edasi on slaidid ja parallax */
+.slide {
+    position: relative;
+    /* 25% paremalt vasakule ja 10% ylevalt alla */
+    padding: 25% 10%; 
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    transform-style: inherit;
+}
+
+.slide:before {
+    /* piltide jaoks */
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.slide, .slide:before {
+    background: 50% 50% / cover;
+
+}
+
+#intro:before {
+    background-image: url(pilt1.jpg);
+    /* annab parallex efekti */
+    transform: translateZ(-1px) scale(2)
+    
+}
+
+#slide1:before {
+    background-color: rgb(188, 131, 188);
+    z-index: 2;
+    
+}
+
+/* paneelid/slaidid, kuhu saab asju panna sisse */
+
+#slide2 {
+    background-color: rgb(152, 146, 146);
+    
+}
+
+#slide3 {
+    background-color: rgb(134, 213, 249);
+}
