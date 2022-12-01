@@ -107,34 +107,30 @@ h1 {
     z-index: 2;
     
 }
+
 /* pilt ja tekst korvuti */
-
-.rida {
-    display: flex;
-    padding-bottom: 15px;
-    z-index: 3;
-
-}
-
 .veerg {
-
-    flex: 50;
+    /* et see oleks paneeli yleval */
+    position: absolute;
+    top: 100px;
+    flex: 100;
     padding: 5px;
-    z-index: 3;
 }
 
 h2 {
-    font-size: 30px;
-    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 400px;
+    left: 850px;
     color: black;
-    margin-top: 15%;
-    z-index: 4;
+    margin-top: 15%; 
 }
 img {
+    left: 10px;
     max-width: 100%;
     border-radius: 16px;
-    height: 400px;
-    width: 250;
+    height: 500px;
+    width: 300;
 
 }
 #slide1 video {
