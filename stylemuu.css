@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+/* paneb üldiselt paika päise asukoha jms */
+header {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* teeb logo ilusaks */
+header .logo
+{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* toob listi tervikuna keskele poole */
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* eraldab listi elemendid */
+header ul li
+{
+    list-style: none;
+    /* kaugus teisest elemendist */
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 350%;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px #666;
+}
+
+.slide {
+    position: relative;
+    /* 25% paremalt vasakule ja 10% ylevalt alla */
+    padding: 25% 10%; 
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    /* box-shadow: 0 -1px 10px pink; */
+    transform-style: inherit;
+
+}
+
+.slide:before {
+    /* piltide jaoks */
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* box-shadow: 0 0 8px 1px pink; */
+
+
+}
+
+.slide, .slide:before {
+    background: 50% 50% / cover;
+
+}
+
+#intro:before {
+    background-image: url(oof2.jpg);
+    /* annab parallex efekti */
+    transform: translateZ(-1px) scale(2)
+    
+}
+
+#slide1:before {
+    background-image: url(pink.png);
+    /* et see oleks peal*/
+    z-index: 2;
+    
+}
+/* pilt ja tekst korvuti */
+
+.rida {
+    display: flex;
+    padding-bottom: 15px;
+    z-index: 3;
+
+}
+
+.veerg {
+
+    flex: 50;
+    padding: 5px;
+    z-index: 3;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-top: 15%;
+    z-index: 4;
+}
+img {
+    max-width: 100%;
+    border-radius: 16px;
+    height: 400px;
+    width: 250;
+
+}
+#slide1 video {
+    z-index: 3;
+    position: absolute;
+    top: 1cm;
+    left: 1cm;
+    right: 1cm;
+    bottom: 1cm;
+    width: 90%;
+    height: 90%;
+}
+
+#slide2 {
+    background-color: lightskyblue;
+
+    
+}
+
+#slide3 {
+    background-color: lightgoldenrodyellow;
+}
+
+#slide4 {
+    background-color:lightgrey;
+}
+
