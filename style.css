@@ -76,3 +76,76 @@ p {
 #slide3 {
     background-color: rgb(134, 213, 249);
 }
+/* siit edasi kategooria nupud */
+.rida {
+    position: absolute;
+    margin: 0;
+    left: 1px;
+}
+.veerg1 {
+    position: relative;
+    width: 420px;
+    left: 0px;
+    z-index: 1000;
+    top: -260px;
+}
+.veerg1 img {
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px black;
+    transition: scale 100ms, opacity 100ms, z-index 100ms;
+}
+.veerg1 img:hover{
+    scale: 1.1;
+    z-index: 10;
+}
+.veerg2 {
+    z-index: 1;
+    position: relative;
+    width: 420px;
+    left: 295px;
+    z-index: 1000;
+    top: -260px;
+}
+.veerg2 img {
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px black;
+    transition: scale 100ms, opacity 100ms, z-index 100ms;
+}
+.veerg2 img:hover{
+    scale: 1.1;
+    z-index: 10;
+}
+.veerg3 {
+    position: relative;
+    width: 420px;
+    left: 840px;
+    top: -1092px;
+    z-index: 1000;
+}
+.veerg3 img {
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px black;
+    transition: scale 100ms, opacity 100ms, z-index 100ms;
+}
+.veerg3 img:hover{
+    scale: 1.1;
+    z-index: 10;
+}
+.title {
+    position: absolute;
+    top: 20px;
+    left: 145px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+/* kategooria nupud lõppevad siin */
