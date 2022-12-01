@@ -1,20 +1,53 @@
 body {
     background: linear-gradient(black, rgb(174, 174, 174))
 }
-.tagasi {
+/* .lifehackid, .kodu, .muu on nupu enese stiil, +:hover tekitab efekti */
+.lifehackid {
     position: relative;
     font-size: 20px;
     color: white;
-    font-family: Lucida Bright;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    letter-spacing: 1px;
     padding: 6px 12px;
     left: 0.5%;
     top: 10px;
     border-radius: 20px;
+    font-weight: bold;
     z-index: 1000;
 }
-.tagasi:hover {
+.kodu {
+    position: relative;
+    font-size: 16px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 6px 12px;
+    left: 935px;
+    top: 10px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+.muu {
+    position: relative;
+    font-size: 16px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 6px 12px;
+    left: 940px;
+    top: 10px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+.lifehackid:hover {
+    background: white;
+    color: black;
+}
+.kodu:hover {
+    background: white;
+    color: black;
+}
+.muu:hover {
     background: white;
     color: black;
 }
@@ -30,6 +63,7 @@ section img#taust {
     padding: 0;
     outline: none;
     width: 100%;
+    box-shadow: 0 25px 30px black;
     height: auto;
     background-size: contain;
     object-fit: cover;
@@ -56,7 +90,7 @@ section img#taust {
     position: relative;
     padding-bottom: 80px;
     margin: 0;
-    top: 50px;
+    margin-top: 100px;
 }
 .veerg1 {
     position: relative;
@@ -69,6 +103,7 @@ section img#taust {
     display: block;
     width: 100%;
     border-radius: 20px;
+    box-shadow: 8px 8px 10px black;
 }
 .veerg2 {
     position: relative;
@@ -81,6 +116,7 @@ section img#taust {
     display: block;
     width: 100%;
     border-radius: 20px;
+    box-shadow: 8px 8px 10px black;
 }
 .veerg3 {
     position: relative;
@@ -93,6 +129,7 @@ section img#taust {
     display: block;
     width: 100%;
     border-radius: 20px;
+    box-shadow: 8px 8px 10px black;
 }
 .overlay {
     position: absolute;
