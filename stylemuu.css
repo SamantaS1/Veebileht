@@ -108,6 +108,17 @@ h1 {
     
 }
 
+#slide1 img {
+    z-index: 3;
+    position: relative;
+
+}
+
+#slide1 h2 {
+    z-index: 3;
+    position: relative;
+}
+
 /* pilt ja tekst korvuti */
 .veerg {
     /* et see oleks paneeli yleval */
@@ -125,6 +136,17 @@ h2 {
     color: black;
     margin-top: 15%; 
 }
+
+/* h3 on videote pealkirjade jaoks */
+h3 {
+    font-size: 25px;
+    position: relative;
+    bottom: 400px;
+    left: 750px;
+    color: black;
+    margin-top: 15%; 
+}
+
 img {
     left: 10px;
     max-width: 100%;
@@ -133,28 +155,27 @@ img {
     width: 300;
 
 }
-#slide1 video {
-    z-index: 3;
-    position: absolute;
-    top: 1cm;
-    left: 1cm;
-    right: 1cm;
-    bottom: 1cm;
-    width: 90%;
-    height: 90%;
-}
+
+
 
 #slide2 {
     background-color: lightskyblue;
 
     
 }
-
 #slide3 {
     background-color: lightgoldenrodyellow;
 }
+#slide3 video {
+    width: 300;
+    height: 500px;
+}
+
 
 #slide4 {
     background-color:lightgrey;
 }
 
+#slide6 {
+    background-color: #666;
+}
