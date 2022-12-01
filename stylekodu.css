@@ -1,63 +1,78 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
 body{
     background-color: #222222;
-    overflow-x: hidden
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.parallax{
+    background-image: url(white-wall-living-room-have-sofa-decoration-3d-rendering_41470-3282.webp);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header{
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    margin-top: -8px;
-    margin-bottom: 30px;
-    padding: 5px;
-    background-color: #f88379;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 200px;
 }
 
-.headerContent{
-    font-style: italic;
-    font-weight: bold;
-    font-size: 50px;
+.text-box{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 400%;
     text-align: center;
-    color: beige;
-    width: 960px;
-    margin: 0 auto;
+    text-shadow: 3px 3px #666;
+    color: #FEFBEA;
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    margin: 0 10px 0 0;
 }
 
 h2{
     font-size: 30px;
     text-align: center;
-    color: beige;
-    margin-top: 15%;
+    color: #FEFBEA;
+    margin: 15% 25px 0 25px;
 }
 
 p{
     text-align: center;
     padding: 0 5px;
-    color: beige;
+    color: #FEFBEA;
     font-size: 20px;
     height: 80px;
+    margin: 20px;
 }
 
 ul{
     text-align: left;
     padding: 0 30px;
-    color: beige;
+    color: #FEFBEA;
     font-size: 20px;
     height: 80px;
+    margin: 20px;
 }
 
 img{
     max-width: 100%;
-    border-radius: 16px;
     height: 400px;
     width: 250px;
-}
-
-.row{
-    display: flex;
-    padding-bottom: 15px;
-}
-
-.column{
-    flex: 50%;
-    padding: 5px;
 }
