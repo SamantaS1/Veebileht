@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background-color: #222222;
+    background-color: #666;
     margin: 0;
     padding: 0;
     perspective: 1px;
@@ -22,6 +22,58 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.lifehackid{
+    position: relative;
+    font-size: 20px;
+    color: #666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 6px 12px;
+    left: 0.5%;
+    top: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.ilu{
+    position: relative;
+    font-size: 20px;
+    color: #666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 6px 12px;
+    left: 935px;
+    top: 10px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.muu{
+    position: relative;
+    font-size: 20px;
+    color: #666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 6px 12px;
+    left: 940px;
+    top: 10px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.lifehackid:hover{
+    background: #FEFBEA;
+    color: #666;
+}
+.ilu:hover{
+    background: #FEFBEA;
+    color: #666;
+}
+.muu:hover{
+    background: #FEFBEA;
+    color: #666;
+}
 
 .header{
     text-align: center;
@@ -34,8 +86,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 400%;
     text-align: center;
-    text-shadow: 3px 3px #666;
-    color: #FEFBEA;
+    color: #666;
 }
 
 .section{
