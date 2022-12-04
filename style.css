@@ -11,6 +11,7 @@ body {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: rgb(152, 146, 146);
 
 
 }
@@ -75,9 +76,7 @@ p {
     
 }
 
-#slide3 {
-    background-color: rgb(134, 213, 249);
-}
+
 /* siit edasi kategooria nupud */
 .rida {
     position: absolute;
