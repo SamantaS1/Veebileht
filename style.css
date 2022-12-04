@@ -70,6 +70,8 @@ p {
 
 #slide2 {
     background-color: rgb(152, 146, 146);
+    height: 500px;
+    width: 100%;
     
 }
 
@@ -82,11 +84,13 @@ p {
     margin: 0;
     left: 1px;
 }
+.rida img{
+    z-index: 1;
+}
 .veerg1 {
     position: relative;
     width: 420px;
     left: 0px;
-    z-index: 1000;
     top: -260px;
 }
 .veerg1 img {
@@ -95,7 +99,7 @@ p {
     width: 100%;
     border-radius: 10px;
     box-shadow: 8px 8px 10px black;
-    transition: scale 100ms, opacity 100ms, z-index 100ms;
+    transition: scale 100ms, opacity 100ms, z-index 0ms;
 }
 .veerg1 img:hover{
     scale: 1.1;
@@ -106,7 +110,6 @@ p {
     position: relative;
     width: 420px;
     left: 295px;
-    z-index: 1000;
     top: -260px;
 }
 .veerg2 img {
@@ -125,8 +128,7 @@ p {
     position: relative;
     width: 420px;
     left: 840px;
-    top: -1092px;
-    z-index: 1000;
+    top: -575px;
 }
 .veerg3 img {
     z-index: 1;
