@@ -34,8 +34,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     padding: 6px 12px;
-    left: 75px;
-    top: 30px;
+    left: 0.5%;
+    top: 10px;
     border-radius: 20px;
     font-weight: bold;
     text-shadow: 2px 3px #666;
@@ -50,7 +50,7 @@ body {
     text-decoration: none;
     padding: 6px 12px;
     left: 935px;
-    top: 30px;
+    top: 10px;
     border-radius: 20px;
     font-weight: bold;
     text-shadow: 2px 2px #666;
@@ -64,7 +64,7 @@ body {
     text-decoration: none;
     padding: 6px 12px;
     left: 940px;
-    top: 30px;
+    top: 10px;
     border-radius: 20px;
     font-weight: bold;
     text-shadow: 2px 2px #666;
