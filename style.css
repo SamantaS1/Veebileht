@@ -24,7 +24,15 @@ h1 {
     text-shadow: 3px 3px rgb(255, 255, 255);
 }
 
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
     text-align: center;
 }
 /* siit edasi on slaidid ja parallax */
@@ -32,13 +40,13 @@ p {
     position: relative;
     /* 25% paremalt vasakule ja 10% ylevalt alla */
     padding: 25% 10%; 
-    min-height: 100%;
+    min-height: 60%;
     width: 100%;
     box-sizing: border-box;
     transform-style: inherit;
 }
 
-.slide:before {
+#intro:before {
     /* piltide jaoks */
     content: "";
     position: absolute;
@@ -46,36 +54,25 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
-
-}
-
-.slide, .slide:before {
-    background: 50% 50% / cover;
-
-}
-
-#intro:before {
     background-image: url(pilt1.jpg);
     /* annab parallex efekti */
     transform: translateZ(-1px) scale(2)
-    
 }
 
-#slide1:before {
-    background-color: rgb(188, 131, 188);
+#slide1 {
+    background-color: rgb(134, 213, 249);
     z-index: 2;
-    
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 300%;
+    padding: 80px 100px;
 }
 
 /* paneelid/slaidid, kuhu saab asju panna sisse */
 
 #slide2 {
     background-color: rgb(152, 146, 146);
-    height: 500px;
-    width: 100%;
-    
 }
-
 
 /* siit edasi kategooria nupud */
 .rida {
@@ -112,8 +109,9 @@ p {
     z-index: 1;
     position: relative;
     width: 420px;
-    left: 295px;
-    top: -260px;
+    left: 422px;
+    z-index: 1000;
+    top: -778px;
 }
 .veerg2 img {
     position: relative;
@@ -132,10 +130,12 @@ p {
     z-index: 10;
 }
 .veerg3 {
+    z-index: 1;
     position: relative;
     width: 420px;
-    left: 840px;
-    top: -575px;
+    left: 844px;
+    z-index: 1000;
+    top: -1296px;
 }
 .veerg3 img {
     position: relative;
